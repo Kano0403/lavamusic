@@ -2,6 +2,7 @@
 FROM node:22 AS builder
 
 WORKDIR /opt/lavamusic/
+RUN mkdir /opt/lavamusic/languages
 
 # Copy package files and install dependencies
 COPY package*.json ./
